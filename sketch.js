@@ -15,7 +15,7 @@ var powerJumpDone = 0;
 
 var score = 0;
 var swordsc = 0;
-var HP = 100;
+var HP = 1000;
 
 var ob1, ob2, ob3, ob4, ob5, ob6, ob7;
 
@@ -301,7 +301,7 @@ function draw(){
             textStyle(BOLDITALIC);
 
             fill("orange");
-            text('Score 60 For Next Level', 100, 50);
+            text('Score 60 For Level-2', 100, 50);
 
             strokeWeight(0);
             textStyle(BOLDITALIC);            
@@ -352,7 +352,7 @@ function draw(){
             ob6.display();
             ob7.display();
 
-            if(score >= 10){
+            if(score >= 60){
 
                 lv.play();
                 dielast.play();
@@ -369,7 +369,7 @@ function draw(){
             textStyle(BOLDITALIC);
 
             fill("orange");
-            text('Score 60 For Next Level', 100, 50);
+            text('Score 60 For Level-3', 100, 50);
 
             strokeWeight(0);
             textStyle(BOLDITALIC);       
@@ -421,7 +421,7 @@ function draw(){
             ob6.display();
             ob7.display();
 
-            if(score >= 10){
+            if(score >= 60){
 
                 dielast.play();
                 lv.play();
@@ -491,7 +491,7 @@ function draw(){
             ob6.display();
             ob7.display();
 
-            if(score >= 10){
+            if(score >= 40){
 
                 powerGroup.destroyEach();
                 oppositeGroup.destroyEach();
@@ -594,7 +594,7 @@ function draw(){
         fill("grey");
         text('Press F5 or Refresh the page To Restart', windowWidth/2-370, windowHeight/2+100);
 
-        var lin = createA('https://hellopiyush0.github.io/JAVA-JUMP/', 'PLAY MY ANOTHER GAME JAVA JUMP');
+        var lin = createA('https://gamejolt.com/games/Mega-Pixel/668588', 'Leave A Like And Relpy In GameJolt');
         lin.position(0, 0);
 
         if(a === 1 && level === 1){
@@ -906,27 +906,27 @@ function draw(){
 
 function keyPressed(){
 
-    if(keyCode === UP_ARROW && pc.body.position.y>540 && powerJumpDone === 0){
+    if(keyCode === UP_ARROW && pc.body.position.y>500 && powerJumpDone === 0){
 
         Matter.Body.applyForce(pc.body, pc.body.position, {	x : 0, y : -150 });
     
     }
     
-    if(keyCode === RIGHT_ARROW && pc.body.position.y>540 && powerJumpDone === 0 ){
+    if(keyCode === RIGHT_ARROW && pc.body.position.y>500 && powerJumpDone === 0 ){
     
-        Matter.Body.applyForce(pc.body, pc.body.position, {	x : 335, y : 0 });
+        Matter.Body.applyForce(pc.body, pc.body.position, {	x : 135, y : 0 });
     
     }
     
-    if(keyCode === LEFT_ARROW && pc.body.position.y>540 && powerJumpDone === 0){
+    if(keyCode === LEFT_ARROW && pc.body.position.y>500 && powerJumpDone === 0){
 
-        Matter.Body.applyForce(pc.body, pc.body.position, {	x : -335, y : 0 });
+        Matter.Body.applyForce(pc.body, pc.body.position, {	x : -135, y : 0 });
     
     }
 
     if(keyCode === DOWN_ARROW && powerJumpDone === 0){
     
-        Matter.Body.applyForce(pc.body, pc.body.position, {	x : 0, y : 95 });
+        Matter.Body.applyForce(pc.body, pc.body.position, {	x : 0, y : 35 });
     
     }
 
@@ -938,19 +938,19 @@ function keyPressed(){
     
     if(keyCode === RIGHT_ARROW && powerJumpDone === 1){
     
-        Matter.Body.applyForce(pc.body, pc.body.position, {	x : 330, y : 0 });
+        Matter.Body.applyForce(pc.body, pc.body.position, {	x : 130, y : 0 });
     
     }
     
     if(keyCode === LEFT_ARROW && powerJumpDone === 1){
     
-        Matter.Body.applyForce(pc.body, pc.body.position, {	x : -330, y : 0 });
+        Matter.Body.applyForce(pc.body, pc.body.position, {	x : -130, y : 0 });
     
     }
 
     if(keyCode === DOWN_ARROW && powerJumpDone === 1){
     
-        Matter.Body.applyForce(pc.body, pc.body.position, {	x : 0, y : 95 });
+        Matter.Body.applyForce(pc.body, pc.body.position, {	x : 0, y : 35 });
     
     }
 
