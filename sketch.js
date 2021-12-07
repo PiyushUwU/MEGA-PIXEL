@@ -914,19 +914,19 @@ function keyPressed(){
     
     if(keyCode === RIGHT_ARROW && pc.body.position.y>540 && powerJumpDone === 0 ){
     
-        Matter.Body.applyForce(pc.body, pc.body.position, {	x : 135, y : 0 });
+        Matter.Body.applyForce(pc.body, pc.body.position, {	x : 335, y : 0 });
     
     }
     
     if(keyCode === LEFT_ARROW && pc.body.position.y>540 && powerJumpDone === 0){
 
-        Matter.Body.applyForce(pc.body, pc.body.position, {	x : -135, y : 0 });
+        Matter.Body.applyForce(pc.body, pc.body.position, {	x : -335, y : 0 });
     
     }
 
     if(keyCode === DOWN_ARROW && powerJumpDone === 0){
     
-        Matter.Body.applyForce(pc.body, pc.body.position, {	x : 0, y : 35 });
+        Matter.Body.applyForce(pc.body, pc.body.position, {	x : 0, y : 95 });
     
     }
 
@@ -938,19 +938,19 @@ function keyPressed(){
     
     if(keyCode === RIGHT_ARROW && powerJumpDone === 1){
     
-        Matter.Body.applyForce(pc.body, pc.body.position, {	x : 130, y : 0 });
+        Matter.Body.applyForce(pc.body, pc.body.position, {	x : 330, y : 0 });
     
     }
     
     if(keyCode === LEFT_ARROW && powerJumpDone === 1){
     
-        Matter.Body.applyForce(pc.body, pc.body.position, {	x : -130, y : 0 });
+        Matter.Body.applyForce(pc.body, pc.body.position, {	x : -330, y : 0 });
     
     }
 
     if(keyCode === DOWN_ARROW && powerJumpDone === 1){
     
-        Matter.Body.applyForce(pc.body, pc.body.position, {	x : 0, y : 35 });
+        Matter.Body.applyForce(pc.body, pc.body.position, {	x : 0, y : 95 });
     
     }
 
