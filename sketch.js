@@ -791,7 +791,7 @@ function draw(){
 
             textSize(40);
             fill("red");
-            text('PLAY MY ANOTHER GAME JAVA JUMP LINK ON LEFT TOP CORNER', windowWidth/2-650, 300);
+            text('LEAVE A LIKE ON GAMEJOLT PLSSS LINK ON LEFT TOP CORNER', windowWidth/2-650, 300);
 
         }
 
