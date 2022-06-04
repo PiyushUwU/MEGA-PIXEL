@@ -594,9 +594,6 @@ function draw(){
         fill("grey");
         text('Press F5 or Refresh the page To Restart', windowWidth/2-370, windowHeight/2+100);
 
-        var lin = createA('https://gamejolt.com/games/Mega-Pixel/668588', 'Leave A Like And Relpy In GameJolt');
-        lin.position(0, 0);
-
         if(a === 1 && level === 1){
 
             fill("red");
